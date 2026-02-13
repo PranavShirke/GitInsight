@@ -129,17 +129,17 @@ Get a **Profile Score (0-100)** broken down by:
 
 ---
 
-Please view the video here!!!,  
+Please view the video here!!!,  <br/>
 Link: https://drive.google.com/file/d/1LVQIxsvkELJNuRHAMj-jalXBdea812Nj/view?usp=sharing  
 
 Live Hosted Website, Link: https://gitintel.netlify.app/ <br/>
-**In case of API rate limit exhaustion, the app will give mock outputs**
+**In case of API rate limit exhaustion, the app will give mock outputs** <br/>
 **Please Watch the Video for Proper Implementation with Exact Results**
 
-View the Evaluation Report generated (as seen in the video), 
+View the Evaluation Report generated (as seen in the video), <br/>
 Link: https://drive.google.com/file/d/1-Pj3nmNathxXjHawIKEdeWYOI0yfl0-5/view?usp=sharing
 
-My Resume, 
+My Resume, <br/>
 Link: https://www.dropbox.com/scl/fi/6cypcwfrb4b1t3tyy6t70/Pranav-Shirke-Resume-20.pdf?rlkey=yquxy3nf3ov1emhjaq4j700nw&st=9uufoifb&dl=0
 
 ---
