@@ -112,7 +112,11 @@ Get a **Profile Score (0-100)** broken down by:
 
 ## 📸 **Screenshots**
 
-*(Add your screenshots here because seeing is believing)*
+<img width="2555" height="1235" alt="image" src="https://github.com/user-attachments/assets/3d7c38d1-33c8-4357-929b-124e06a6f1c3" />
+<img width="2552" height="1239" alt="image" src="https://github.com/user-attachments/assets/033b43ea-d40f-4ddc-99cb-b7de039de8f2" />
+
+
+
 
 | Dashboard | Analytics |
 |:---:|:---:|
