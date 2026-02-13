@@ -114,12 +114,18 @@ Get a **Profile Score (0-100)** broken down by:
 
 <img width="2555" height="1235" alt="image" src="https://github.com/user-attachments/assets/3d7c38d1-33c8-4357-929b-124e06a6f1c3" />
 <img width="2552" height="1239" alt="image" src="https://github.com/user-attachments/assets/033b43ea-d40f-4ddc-99cb-b7de039de8f2" />
+<img width="2559" height="1243" alt="image" src="https://github.com/user-attachments/assets/8e6521d8-495b-40f9-ae1f-f04019e17595" />
+<img width="2559" height="1243" alt="image" src="https://github.com/user-attachments/assets/9de3974c-09ed-4ea2-8051-4097bd27d11d" />
+<img width="2508" height="978" alt="image" src="https://github.com/user-attachments/assets/02c8059f-c42e-40a1-ba95-b17f7365f454" />
+
+
+
+Please view the video here!!!
+Link: https://drive.google.com/file/d/1LVQIxsvkELJNuRHAMj-jalXBdea812Nj/view?usp=sharing
 
 
 
 
-| Dashboard | Analytics |
-|:---:|:---:|
 | <div style="width: 300px; height: 150px; background: #111; border-radius: 10px; display: flex; align-items: center; justify-content: center;">PlaceHolder</div> | <div style="width: 300px; height: 150px; background: #111; border-radius: 10px; display: flex; align-items: center; justify-content: center;">PlaceHolder</div> |
 
 ---
