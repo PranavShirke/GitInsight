@@ -50,6 +50,9 @@ Get a **Profile Score (0-100)** broken down by:
 *   **Velocity Heatmap**: A contribution graph that actually looks good.
 *   **Language DNA**: Radar charts showing your true tech stack distribution.
 *   **Resume Viewer**: Integrated PDF viewer to audit your CV alongside your code.
+*   **Deep Repository and Account analysis**: Analyze any particular repository in depth and give insights.
+*   **Hiring Forecaster**: Give a detailed and easy-to-understand hiring analysis based on user and company requirements.
+*   **Candidature Listing**: Maintain a List of candidates for better Effectiveness of the application.
 
 ---
 
@@ -119,16 +122,16 @@ Get a **Profile Score (0-100)** broken down by:
 <img width="2508" height="978" alt="image" src="https://github.com/user-attachments/assets/02c8059f-c42e-40a1-ba95-b17f7365f454" />
 
 
+---
 
 Please view the video here!!!
-Link: https://drive.google.com/file/d/1LVQIxsvkELJNuRHAMj-jalXBdea812Nj/view?usp=sharing
+Link: https://drive.google.com/file/d/1LVQIxsvkELJNuRHAMj-jalXBdea812Nj/view?usp=sharing  
+
+Future Additions
+1. Direct Candidature reply: You can directly send an email or confirmation to selected candidates
+2. AI-Powered Resume to GitHub analyzer: Directly analyzes the GitHub and resume for an effective scoring and advanced selection tech.
 
 
-
-
-| <div style="width: 300px; height: 150px; background: #111; border-radius: 10px; display: flex; align-items: center; justify-content: center;">PlaceHolder</div> | <div style="width: 300px; height: 150px; background: #111; border-radius: 10px; display: flex; align-items: center; justify-content: center;">PlaceHolder</div> |
-
----
 
 ## 🤝 **Contributing**
 
