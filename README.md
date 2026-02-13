@@ -129,13 +129,13 @@ Get a **Profile Score (0-100)** broken down by:
 
 ---
 
-Please view the video here!!!
+Please view the video here!!!,  
 Link: https://drive.google.com/file/d/1LVQIxsvkELJNuRHAMj-jalXBdea812Nj/view?usp=sharing  
 
-View the Evalution Report generated (as seen in the video)
+View the Evaluation Report generated (as seen in the video), 
 Link: https://drive.google.com/file/d/1-Pj3nmNathxXjHawIKEdeWYOI0yfl0-5/view?usp=sharing
 
-My Resume:
+My Resume, 
 Link: https://www.dropbox.com/scl/fi/6cypcwfrb4b1t3tyy6t70/Pranav-Shirke-Resume-20.pdf?rlkey=yquxy3nf3ov1emhjaq4j700nw&st=9uufoifb&dl=0
 
 ---
