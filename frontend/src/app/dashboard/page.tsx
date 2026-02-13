@@ -63,6 +63,9 @@ export default function DashboardPage() {
             if (!res.ok) throw new Error("Analysis failed");
             const result = await res.json();
             setData(result);
+            if (result.aiAnalysis) {
+                setAiScore(result.aiAnalysis);
+            }
             localStorage.setItem("gitintel_username", user);
             // Store data for analytics page
             localStorage.setItem("gitintel_data", JSON.stringify(result));

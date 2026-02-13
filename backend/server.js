@@ -64,7 +64,7 @@ app.post('/api/analyze-all', async (req, res) => {
 
     try {
       const timeoutPromise = new Promise((_, reject) =>
-        setTimeout(() => reject(new Error("AI_TIMEOUT")), 5000)
+        setTimeout(() => reject(new Error("AI_TIMEOUT")), 25000)
       );
 
       const aiResults = await Promise.race([
@@ -168,6 +168,32 @@ app.post('/api/analyze-all', async (req, res) => {
   }
 });
 
+// ─── ENDPOINT: Single AI Profile Score (for manual regenerate) ───
+app.post('/api/analyze-all/ai-profile', async (req, res) => {
+  try {
+    const { username } = req.body;
+    if (!username) return res.status(400).json({ error: "Username is required" });
+
+    // 1. Fetch minimal profile data for AI
+    const profile = await githubService.fetchGitHubData(username);
+
+    // 2. Run Analysis (or Fallback)
+    let profileAnalysis = null;
+    try {
+      profileAnalysis = await aiService.analyzeProfile(profile);
+    } catch (e) {
+      console.warn("AI Profile Analysis Failed, using mock:", e.message);
+      profileAnalysis = aiService.getMockProfileAnalysis();
+    }
+
+    res.json(profileAnalysis);
+
+  } catch (error) {
+    console.error("AI Profile Error:", error.message);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // ─── ENDPOINT: Recruiter Role Match ───
 app.post('/api/analyze-all/match-role', async (req, res) => {
   try {
@@ -197,6 +223,34 @@ app.post('/api/analyze-all/match-role', async (req, res) => {
 
   } catch (error) {
     console.error("Role Match Error:", error.message);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+
+
+// ─── ENDPOINT: Single Repo Deep Audit ───
+app.post('/api/analyze-all/repo', async (req, res) => {
+  try {
+    const { username, repoName } = req.body;
+    if (!username || !repoName) return res.status(400).json({ error: "Username and Repo Name required" });
+
+    // 1. Fetch Deep Repo Details
+    const repoDetails = await githubService.fetchRepoDetails(username, repoName);
+
+    // 2. Run AI Audit
+    let auditResult = null;
+    try {
+      auditResult = await aiService.auditRepository(repoDetails);
+    } catch (e) {
+      console.warn("Repo Audit Failed, using mock:", e.message);
+      auditResult = aiService.getMockRepoAudit(repoName);
+    }
+
+    res.json(auditResult);
+
+  } catch (error) {
+    console.error("Repo Audit Error:", error.message);
     res.status(500).json({ error: error.message });
   }
 });

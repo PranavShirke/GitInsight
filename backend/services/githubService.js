@@ -131,6 +131,95 @@ async function fetchGitHubData(username) {
   }
 }
 
+
+/**
+ * Fetch detailed info for a single repo (for Deep Audit).
+ */
+async function fetchRepoDetails(username, repoName) {
+  const query = `
+  query($owner: String!, $name: String!) {
+    repository(owner: $owner, name: $name) {
+      name
+      description
+      stargazerCount
+      forkCount
+      isArchived
+      primaryLanguage { name }
+      languages(first: 5) { edges { node { name } } }
+      object(expression: "HEAD:") {
+        ... on Tree {
+          entries {
+            name
+            type
+          }
+        }
+      }
+      refs(refPrefix: "refs/heads/", first: 1) {
+        nodes {
+          name
+          target {
+            ... on Commit {
+              history(first: 10) {
+                edges {
+                  node {
+                    message
+                    committedDate
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      readme: object(expression: "HEAD:README.md") {
+        ... on Blob { text }
+      }
+    }
+  }
+  `;
+
+  try {
+    const response = await axios.post(
+      GITHUB_API_URL,
+      { query, variables: { owner: username, name: repoName } },
+      { headers: getHeaders() }
+    );
+
+    if (response.data.errors) throw new Error(response.data.errors[0].message);
+
+    const repo = response.data.data.repository;
+
+    // Process file list for "existence check" (cheap way to detect stack)
+    const files = repo.object?.entries?.map(e => e.name) || [];
+
+    return {
+      name: repo.name,
+      description: repo.description,
+      stars: repo.stargazerCount,
+      forks: repo.forkCount,
+      language: repo.primaryLanguage?.name,
+      // Flatten files for AI context
+      structure: {
+        hasDocker: files.includes('Dockerfile') || files.includes('docker-compose.yml'),
+        hasTests: files.some(f => f.includes('test') || f.includes('spec')),
+        hasCI: files.includes('.github') || files.includes('.gitlab-ci.yml'),
+        hasTypes: files.includes('tsconfig.json'),
+        hasPackageJson: files.includes('package.json'),
+        rootFiles: files.slice(0, 20) // List top 20 root files
+      },
+      recentCommits: repo.refs?.nodes[0]?.target?.history?.edges.map(e => ({
+        message: e.node.message,
+        date: e.node.committedDate
+      })) || [],
+      readmeSample: repo.readme?.text?.substring(0, 1000) || "No README"
+    };
+
+  } catch (error) {
+    console.error(`Error details for ${repoName}:`, error.message);
+    throw error;
+  }
+}
+
 /**
  * Aggregate language byte counts across all repositories.
  * Returns sorted array: [{ name, color, bytes, percentage }]
@@ -313,10 +402,11 @@ function scoreReadme(readmeText) {
 
 module.exports = {
   fetchGitHubData,
+  fetchRepoDetails,
   aggregateLanguages,
-  computeTotalStars,
-  accountAgeYears,
-  detectGhostCode,
-  calculateHiringOdds,
   scoreReadme,
+  detectGhostCode,
+  accountAgeYears,
+  computeTotalStars,
+  calculateHiringOdds
 };
