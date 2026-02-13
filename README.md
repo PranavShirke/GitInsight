@@ -134,7 +134,7 @@ Link: https://drive.google.com/file/d/1LVQIxsvkELJNuRHAMj-jalXBdea812Nj/view?usp
 
 Live Hosted Website, Link: https://gitintel.netlify.app/ <br/>
 **In case of API rate limit exhaustion, the app will give mock outputs** <br/>
-**Please Watch the Video for Proper Implementation with Exact Results**
+**Please watch the Video/Above images for Proper Implementation with Exact Results**
 
 View the Evaluation Report generated (as seen in the video), <br/>
 Link: https://drive.google.com/file/d/1-Pj3nmNathxXjHawIKEdeWYOI0yfl0-5/view?usp=sharing
