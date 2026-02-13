@@ -132,7 +132,6 @@ Link: https://drive.google.com/file/d/1-Pj3nmNathxXjHawIKEdeWYOI0yfl0-5/view?usp
 
 My Resume:
 Link: https://www.dropbox.com/scl/fi/6cypcwfrb4b1t3tyy6t70/Pranav-Shirke-Resume-20.pdf?rlkey=yquxy3nf3ov1emhjaq4j700nw&st=9uufoifb&dl=0
-
 -
 Future Additions
 1. Direct Candidature reply: You can directly send an email or confirmation to selected candidates
