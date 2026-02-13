@@ -16,6 +16,8 @@
 **Deconstruct your GitHub profile with the ruthlessness of a cynical Engineering Manager.**  
 *Detailed Analytics • Velocity Heatmaps • 3D Visualizations • Brutal AI Feedback*
 
+*Doing prescriptive analysis from Descriptive*
+
 [Report Bug](https://github.com/PranavShirke/GitInsight/issues) • [Request Feature](https://github.com/PranavShirke/GitInsight/issues)
 
 </div>
@@ -53,6 +55,7 @@ Get a **Profile Score (0-100)** broken down by:
 *   **Deep Repository and Account analysis**: Analyze any particular repository in depth and give insights.
 *   **Hiring Forecaster**: Give a detailed and easy-to-understand hiring analysis based on user and company requirements.
 *   **Candidature Listing**: Maintain a List of candidates for better Effectiveness of the application.
+*   **Actionable Tickets**: To give you pointers to enhance your GitHub.
 
 ---
 
@@ -120,6 +123,8 @@ Get a **Profile Score (0-100)** broken down by:
 <img width="2559" height="1243" alt="image" src="https://github.com/user-attachments/assets/8e6521d8-495b-40f9-ae1f-f04019e17595" />
 <img width="2559" height="1243" alt="image" src="https://github.com/user-attachments/assets/9de3974c-09ed-4ea2-8051-4097bd27d11d" />
 <img width="2508" height="978" alt="image" src="https://github.com/user-attachments/assets/02c8059f-c42e-40a1-ba95-b17f7365f454" />
+<img width="2553" height="1215" alt="image" src="https://github.com/user-attachments/assets/b8009716-eb59-4a3b-9b60-c598b374cd33" />
+
 
 
 ---
